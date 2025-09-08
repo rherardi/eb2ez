@@ -107,7 +107,7 @@ The following substitutions are applied before writing the EZ Badge file:
 
 ## 💡 Future Direction
 
-Version 0.1 has hardcoded (1a) input and (1b) output column headings, (2) column heading mappings, and (3) value transformation rules. It's a quick hack.
+🔔 Version 0.1 has hardcoded (1a) input and (1b) output column headings, (2) column heading mappings, and (3) value transformation rules. It's a quick hack.
 
 In the future, each of these should be specified in optional CSV formatted configuration files:
 
