@@ -1,6 +1,6 @@
-# `eb2e.py` — Eventbrite to EZ Badge CSV Converter
+# Eventbrite to EZ Badge CSV Converter
 
-`eb2ez.py` converts an [Eventbrite](https://www.eventbrite.com/) **Attendee Report CSV** to an [EZ Badge](https://ez-badge.com/) **upload CSV**, enabling badge printing for in-person event attendees.
+`eb2ez.py` v0.1 converts an [Eventbrite](https://www.eventbrite.com/) **Attendee Report CSV** to an [EZ Badge](https://ez-badge.com/) **upload CSV**, enabling badge printing for in-person event attendees.
 
 ---
 
@@ -103,3 +103,19 @@ The following substitutions are applied before writing the EZ Badge file:
 | `Are you an IEEE member?`      | `IEEE?`                   |
 | `Are you an IEEE-CNSV Member?` | `CNSV?`                   |
 
+---
+
+## 💡 Future Direction
+
+Version 0.1 has hardcoded (1a) input and (1b) output column headings, (2) column heading mappings, and (3) value transformation rules. It's a quick hack.
+
+In the future, each of these should be specified in optional CSV formatted configuration files:
+
+| Config File               | Description                                     |
+| -------------------- | ---------------------------------------------------- |
+| column_map.csv       | Two columns: input column and output column (requires matchig input/output templates) |
+| input_tenplate.csv   | One line column heading speficiation (example) of valid input (error if input file does not match) |
+| output_template      | One line column heading speficiation (example) of valid output (syntax check currently) |
+| value_transform.csv  | One line, three columns: input column title, input value, output value (simple string replacememnt) |
+
+---
