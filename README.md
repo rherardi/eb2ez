@@ -103,6 +103,3 @@ The following substitutions are applied before writing the EZ Badge file:
 | `Are you an IEEE member?`      | `IEEE?`                   |
 | `Are you an IEEE-CNSV Member?` | `CNSV?`                   |
 
----
-
-Let me know if you want this saved to a file or customized for another event!
