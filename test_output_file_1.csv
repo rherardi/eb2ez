@@ -1,0 +1,4 @@
+FirstName,LastName,Email,Company or Organization,IEEE?,CNSV?,Are you a consultant?,Are you on CNSV BOD?,CB 6:1 - CNSV Email,CB 6:2 - CNSV Website,CB 6:3 - IEEE GRID,CB 6:4 - Eventbrite Browsing,CB 6:5 - Meetup,CB 6:6 - Friend,CB 6:7 - Other
+John,Doe,jdoe1@test1mail.com,Company1Name,IEEE, ,Consultant, , , , , , , , 
+Jane,Doe,jdoe2@test2mail.com,Company2Name, , , , , , , , , , , 
+Joe,Bloggs,jbloggs@test3mail.com,Company3Name,IEEE,CNSV,Consultant,BOD, , , , , , , 
