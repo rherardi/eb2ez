@@ -1,6 +1,6 @@
 # `eb2e.py` — Eventbrite to EZ Badge CSV Converter
 
-`eb2e.py` converts an [Eventbrite](https://www.eventbrite.com/) **Attendee Report CSV** to an [EZ Badge](https://ez-badge.com/) **upload CSV**, enabling badge printing for in-person event attendees.
+`eb2ez.py` converts an [Eventbrite](https://www.eventbrite.com/) **Attendee Report CSV** to an [EZ Badge](https://ez-badge.com/) **upload CSV**, enabling badge printing for in-person event attendees.
 
 ---
 
