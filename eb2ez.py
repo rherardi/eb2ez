@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """
 Eventbrite CSV Processor
-Converts Eventbrite Attendee Reports to EX Badge upload format
+Converts Eventbrite Attendee Reports to EZ Badge upload format
 """
 
 import sys
