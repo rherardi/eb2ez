@@ -51,7 +51,10 @@ def validate_eventbrite_headers(file_path):
     ]
     
     try:
-        with open(file_path, 'r', newline='', encoding='utf-8') as csvfile:
+        # Use utf-8-sig encoding to automatically handle UTF-8 BOM (Byte Order Mark)
+        # if present. Some applications like Excel add BOM to CSV files, which would
+        # cause header validation to fail without this encoding.
+        with open(file_path, 'r', newline='', encoding='utf-8-sig') as csvfile:
             reader = csv.reader(csvfile)
             headers = next(reader)
             
@@ -207,7 +210,8 @@ def process_csv_file(input_file):
     """
     try:
         # Read the CSV file
-        with open(input_file, 'r', newline='', encoding='utf-8') as csvfile:
+        # Use utf-8-sig encoding to automatically strip UTF-8 BOM if present
+        with open(input_file, 'r', newline='', encoding='utf-8-sig') as csvfile:
             reader = csv.DictReader(csvfile)
             headers = reader.fieldnames
             data = list(reader)
